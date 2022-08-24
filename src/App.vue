@@ -1,13 +1,19 @@
 <template>
   <PageHeader/>
+  <HomePart/>
+  <InfoModule/>
 </template>
 
 <script>
 
 import PageHeader from "@/components/PageHeader";
+import HomePart from "@/components/HomePart";
+import InfoModule from "@/components/InfoModule";
 export default {
   name: 'App',
   components: {
+    InfoModule,
+    HomePart,
     PageHeader
   }
 }

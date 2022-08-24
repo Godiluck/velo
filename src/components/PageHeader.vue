@@ -10,8 +10,9 @@
     </ul>
   </div>
   <div class="switcher">
-<!--    <img class="header_switcher" id="switcher" src="../assets/arrow.svg" @click="toggleHeader" alt=""/>-->
-    <svg @click="toggleHeader" class="header_switcher btn_white" id="switcher" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <!--    <img class="header_switcher" id="switcher" src="../assets/arrow.svg" @click="toggleHeader" alt=""/>-->
+    <svg @click="toggleHeader" class="header_switcher btn_white" id="switcher" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
          x="0px" y="0px"
          viewBox="0 0 64 64" xml:space="preserve">
 <g id="Up-arrow">
@@ -43,7 +44,9 @@ export default {
 
 <style scoped>
 .wrapper {
+  position: fixed;
   padding-right: 5%;
+  width: 95%;
   background: #2c3e50;
   height: 25vh;
   display: flex;
@@ -51,6 +54,7 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   transition: 1s;
+  z-index: +1;
 }
 
 .toggle_header {
@@ -111,6 +115,7 @@ export default {
   height: 25vh;
   display: flex;
   align-items: center;
+  z-index: +2;
 }
 
 .header_switcher {
