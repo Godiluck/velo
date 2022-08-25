@@ -2,6 +2,7 @@
   <PageHeader/>
   <HomePart/>
   <InfoModule/>
+  <ContactForm/>
 </template>
 
 <script>
@@ -9,9 +10,11 @@
 import PageHeader from "@/components/PageHeader";
 import HomePart from "@/components/HomePart";
 import InfoModule from "@/components/InfoModule";
+import ContactForm from "@/components/ContactForm";
 export default {
   name: 'App',
   components: {
+    ContactForm,
     InfoModule,
     HomePart,
     PageHeader
@@ -23,6 +26,7 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Comfortaa', cursive;
 }
 
 #app {
